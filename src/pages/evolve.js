@@ -14,7 +14,7 @@ export default function Evolve() {
     if (!data) return (
         <>
             <Link href="/"><h1>Better PokeAPI</h1></Link>
-            <h2>Must Implement your API. Data is empty</h2>
+            <h2>Must Implement your API. Data is empty</h2> 
         </>
     )
     let { evolution } = data

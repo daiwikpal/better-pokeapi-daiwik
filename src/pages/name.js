@@ -31,7 +31,7 @@ export default function Name() {
                 <>
                     <h2>Name: {pokemonName}</h2>
                     <img src={sprite} />
-                    <h2>Types: {types.map(type => <span>{type} </span>)}</h2>
+                    <h2>Types: {types.map(type => <span key={type}>{type} </span>)}</h2>
                 </>
             )}
         </>

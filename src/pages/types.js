@@ -29,7 +29,7 @@ export default function Types() {
             ) : (
                 <>
                     <h2>Type: {type}</h2>
-                    <ul>{pokemon.map(poke => <li>{poke}</li>)}</ul>
+                    <ul>{pokemon.map(poke => <li key={poke}>{poke}</li>)}</ul>
                 </>
             )}
         </>
