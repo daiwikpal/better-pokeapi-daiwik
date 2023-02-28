@@ -7,9 +7,9 @@ export default function handler(req, res) {
         case 'POST':
             let pokemon1 = body.pokemon1;
             console.log(pokemon1);
-            const N = Math.floor(Math.ceil() * 225);
+            const N = Math.ceil(Math.random() * 225);
             console.log("N:" + N);
-            const BALL = Math.floor(Math.ceil() * 225);
+            const BALL = Math.ceil(Math.random() * 225);
             console.log("ball:" + BALL);
             let HP_MAX = 0; 
            
@@ -25,7 +25,7 @@ export default function handler(req, res) {
                 })
             
 
-            const HP_CURRENT = Math.floor(Math.ceil() * (HP_MAX + 1));
+            const HP_CURRENT = Math.ceil(Math.random() * (HP_MAX + 1));
             
             const F = (HP_MAX * 255 * 4) / (HP_CURRENT * BALL); 
             console.log("F:" + F);
