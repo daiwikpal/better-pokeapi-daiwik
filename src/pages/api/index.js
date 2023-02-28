@@ -6,8 +6,8 @@ export default function handler(req, res) {
 
     const response = axios.get(url + randomNum)
         .then(function (response){
-            let types = response.data.types.map(type => type.type.name)
-            return res.send({name: response.data.name, sprite: response.data.sprites.front_default, types: types}); 
+            let types_list = response.data.types.map(type => type.type.name)
+            return res.send({name: response.data.name, sprite: response.data.sprites.front_default, types: types_list}); 
         })
         .catch(function (error){
             console.log(error);

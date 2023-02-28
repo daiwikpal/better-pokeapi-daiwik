@@ -18,6 +18,7 @@ export default function Evolve() {
         </>
     )
     let { evolution } = data
+    console.log("evolution:" + evolution)
 
 
     return (
