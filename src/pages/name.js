@@ -19,7 +19,10 @@ export default function Name() {
         </>
     )
 
+
+    console.log(data)
     let { pokemonName, sprite, types } = data
+    console.log(pokemonName, sprite, types)
 
 
     return (

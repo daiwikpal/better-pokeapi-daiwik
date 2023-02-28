@@ -28,7 +28,7 @@ export default function Random() {
                 <>
                     <h2>Name: {name}</h2>
                     <img src={sprite} />
-                    <h2>Types: {types.map(type => <span key={type}>{type} </span>)}</h2>
+                    <h2>Types: {types?.map(type => <span key={type}>{type.name} </span>)}</h2>
                 </>
             )}
         </>
