@@ -22,6 +22,7 @@ export default function Battle() {
         </>
     )
     let { winner } = data
+    
 
     return (
         <>
