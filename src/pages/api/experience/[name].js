@@ -9,10 +9,9 @@ export default function handler(req, res) {
     const response = axios.get(url + name)
         .then(function (response){
 
-            let color = response.data.color.name
             let growth_rate = response.data.growth_rate.name
             let n = level
-            let experience
+            let experience; 
             if (growth_rate == "erratic") {
                 if (n < 50) {
                     experience = n^3 * (100 - n) / 50
@@ -45,8 +44,7 @@ export default function handler(req, res) {
             url = "https://pokeapi.co/api/v2/pokemon/"
             const response2 = axios.get(url + name)
             .then(function (response2){
-                let sprite = response2.data.sprites.front_default
-                return res.send({experience: experience, color: color, sprite: sprite});
+                return res.send({experience: experience});
 
             })
             .catch(function (error){
